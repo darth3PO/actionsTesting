@@ -1,0 +1,16 @@
+on:
+  push:
+    branches: main
+      pyinstaller-build
+
+jobs:
+  pyinstaller-build:
+    runs-on: <windows-latest / ubuntu-latest / ..... etc>
+    steps:
+      - name: Create Executable
+        uses: sayyid5416/pyinstaller@v1
+        with:
+          python_ver: '3.11'
+          pyinstaller_ver: '==5.13.2'
+          spec: 'hello_world.py'
+          upload_exe_with_name: 'hello_world'
