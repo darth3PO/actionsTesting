@@ -13,4 +13,4 @@ jobs:
           python_ver: '3.11.6'
           pyinstaller_ver: '==6.8.0'
           spec: 'hello_world.py'
-          upload_exe_with_name: 'hello_world'
+          upload_exe_with_name: 'hello_world.exe'
